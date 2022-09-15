@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>START TOPIC</title>
+    <link rel="stylesheet" href="css/starttopic.css" />
+    <script>
+      function passvalue()
+      {
+        {
+          var text = document.getElementById('message').value;
+          localStorage.setItem('textvalue', text); 
+        }
+        {
+          var text = document.getElementById('topic').value;
+          localStorage.setItem('showtopic', text);
+        }
+        return false;
+
+      }
+
+    </script>
+
+  </head>
+  <body>
+    <div class="bar"></div>
+    <header>
+      <h1>START TOPIC</h1>
+    </header>
+    <main>
+      <form class="form" action="topics.html">
+        <h2>Details</h2>
+        <div class="form-control upload">
+          <label for="avatar">Upload Post<input
+              type="file"
+              class="file"
+              id="avatar"
+              name="avatar"
+              accept="image/png, image/jpeg"/>
+          </label>
+          <p id="file-name" class="file-name"></p>
+          <button id="reset" class="reset" type="button">Reset</button>
+        </div>
+        <div class="form-control">
+          <label for="name">Topic Name</label>
+          <select name="topics" id="topic">
+            <option value="ARTIFICIAL INTELLIGENCE">ARTIFICIAL INTELLIGENCE</option>
+            <option value="BLOCK CHAIN">BLOCK CHAIN</option>
+            <option value="DIGITAL MARKETING">DIGITAL MARKETING</option>
+            <option value="NETWORKING">NETWORKING</option>
+            <option value="ELECTRONIC DEVICE">ELECTRONIC DEVICE</option>
+            <option value="MICROPROCESSOR">MICROPROCESSOR</option>
+            <option value="WIRELESS NETWORKING">WIRELESS NETWORKING</option>
+            <option value="">DIGITAL ELECTRONICS</option>
+            <option value="DIGITAL ELECTRONICS">CATROGRAPHY</option>
+            <option value="GIS">GIS</option>
+            <option value="GEOLOGY">GEOLOGY</option>
+            <option value="GEOSCIENCE">GEOSCIENCE</option>
+            <option value="THERMODYNAMIC">THERMODYNAMIC</option>
+            <option value="FLUID MECHANICS">FLUID MECHANICS</option>
+            <option value="HEAT AND MASS TRANSFER">HEAT AND MASS TRANSFER</option>
+            <option value="MECHANICS">MECHANICS</option>
+          </select>
+          <small><span class="count">0</span>/50 characters</small>
+        </div>
+        <div class="form-control">
+          <label for="message">Message</label>
+          <textarea id="message" rows="3"></textarea>
+          <small><span class="count">0</span>/280 characters</small>
+        </div>
+        <input type="submit" value="START" class="btn" type="button" onclick="passvalue();"/>
+    </form>
+    </main>
+  </body>
+</html>

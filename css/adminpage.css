@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+
+.navbar {
+    height: 150px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #17141d;
+ 
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    padding-right: 800px;
+    color: white;
+    font-family: "Arial Narrow Bold";
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.navbar .logo a span {
+    color: lightcoral;
+
+}
+.log {
+    height: 100px;
+    width: 100px;
+}
+.navbar .login-container {
+    float: right;
+  }
+  .navbar .login-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
+  .navbar .login-container button:hover {
+    background:lightcoral;
+  }
+
+
+main {
+    flex: 1;
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    padding: 32px 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+main .form {
+    background-color: #17141d;
+    border: 1px lightcoral solid;
+    border-radius: 8px;
+    padding: 24px;
+    flex: 1;
+}
+
+main .form th {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    color: lightcoral;
+}
+
+main .form td{
+    color: white;
+    text-align: center;
+}
+
+
+
+@media (max-width: 890px) {
+    main .form {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 700px) {
+    main .form {
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    main .form {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 520px) {
+    main .form {
+        background-color: #f7f8f9;
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 24px 0;
+    }
+}
+
+.btn {
+    display: block;
+    border: none;
+    border-radius: 6px;
+    border-radius: 99px;
+    background-color: #201c29;
+    color: white;
+    font: inherit;
+    margin: auto;
+    padding: 11px 33px;
+    cursor: pointer;
+}
+
+@media (hover: hover) {
+    .btn {
+        transition: background 200ms ease-in;
+    }
+
+    .btn:hover {
+        background-color: lightcoral;
+    }
+}
+
+@media (hover: none) {
+    .btn:active {
+        background-color: #1a90d9;
+    }
+}
